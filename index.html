@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<h1 style="text-align: center;">这是入口位置</h1>
+		<div style="position: relative;">
+			<div id="show" style="position: absolute;left: 63%;top: 18%;width: 50px;height: 50px;"></div>
+			<img style="padding-left: 32%;" src="img/ma.jpg"/></div>
+		<div id="showdiv" style="border: 1px solid grey;width: 300px;height: 200px;margin: 0 auto;display: none;">
+			<h2>位置坐标:</h2>
+			<h3 id="h3_one"></h3>
+			<h3 id="h3_two"></h3>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var h3One = document.getElementById("h3_one");
+		var h3Two = document.getElementById("h3_two");
+		var show = document.getElementById("show");
+		showDiv = document.getElementById("showdiv");
+		show.onclick = function(){
+			showDiv.style.display = "block";
+			h3One.innerHTML = "x坐标:834px";
+			h3Two.innerHTML = "y坐标:348px";
+		}
+	</script>
+</html>
